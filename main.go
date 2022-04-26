@@ -1,7 +1,10 @@
 package main
 
 import (
+	"log"
 	"net/http"
+	"os"
+	"strconv"
 	"strings"
 
 	"github.com/Kamva/mgm"
@@ -20,9 +23,14 @@ func main() {
 	Init()
 
 	h := handlr.New()
-
 	h.Handler("/:id", linkHandler)
-	h.Start(1993)
+
+	portNumber, err := strconv.Atoi(os.Getenv("PORT"))
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	h.Start(portNumber)
 }
 
 func linkHandler(w http.ResponseWriter, r *http.Request) {
