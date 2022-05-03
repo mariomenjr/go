@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/Kamva/mgm v1.2.3
 	github.com/joho/godotenv v1.4.0
-	github.com/mariomenjr/handlr v0.1.0-alpha.6
+	github.com/mariomenjr/handlr v0.1.0-alpha.8
 	go.mongodb.org/mongo-driver v1.1.3
 )
 

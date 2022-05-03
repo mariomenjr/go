@@ -23,7 +23,7 @@ func main() {
 	Init()
 
 	h := handlr.New()
-	h.Handler("/:id", linkHandler)
+	h.HandlerFunc("/:id", linkHandler)
 
 	portNumber, err := strconv.Atoi(os.Getenv("PORT"))
 	if err != nil {
