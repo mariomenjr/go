@@ -1,4 +1,4 @@
-module github.com/mariomenjr/links
+module github.com/mariomenjr/go
 
 go 1.18
 

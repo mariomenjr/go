@@ -8,9 +8,9 @@ import (
 	"strings"
 
 	"github.com/Kamva/mgm"
+	"github.com/mariomenjr/go/models"
+	"github.com/mariomenjr/go/utils"
 	"github.com/mariomenjr/handlr"
-	"github.com/mariomenjr/links/models"
-	"github.com/mariomenjr/links/utils"
 	"go.mongodb.org/mongo-driver/bson"
 )
 
